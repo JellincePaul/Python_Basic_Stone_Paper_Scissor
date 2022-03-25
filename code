@@ -1,0 +1,30 @@
+import random
+j=input(print("Enter your value"))
+a=" " #pc
+i = random.randint(1,3)
+if i==1:
+    a="stone"
+elif i==2:
+    a="paper"
+elif i==3:
+    a="scissor"
+if j==a:
+      print("retry")
+elif j=="stone" and a=="paper":
+    print("user=stone and pc=paper")
+    print("pc won")
+elif a=="stone" and j=="paper":
+    print("pc=stone and user=paper")
+    print("user won")
+elif j=="stone" and a=="scissor":
+    print("user=stone and pc=scissor")
+    print("user won")
+elif a=="stone" and j=="scissor":
+    print("a=stone and user=scissor")
+    print("pc won")
+elif a=="paper" and j=="scissor":
+    print("pc=scissor and user=paper")
+    print("user won")
+elif j=="paper" and a=="scissor":
+    print("user=scissor and pc=paper")
+    print("pc won")
